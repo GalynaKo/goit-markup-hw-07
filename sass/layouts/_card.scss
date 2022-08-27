@@ -1,0 +1,38 @@
+.card__description {
+
+    color: var(--primary-text-color);
+    display: flex;
+    gap: 30px;
+
+}
+
+
+.card__svg {
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card__title {
+    margin-top: 30px;
+    color: #212121;
+    width: 270px;
+    height: 16px;
+    text-align: left;
+}
+
+.card__text {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    margin-top: 10px;
+    width: 270px;
+    height: 75px;
+    text-align: left;
+
+}
