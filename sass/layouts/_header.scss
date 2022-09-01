@@ -12,25 +12,25 @@ header {
 
 }
 
-.header__navigation {
+&__navigation {
     display: flex;
     align-self: center;
 
 }
 
-.header-container {
+&-container {
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
-.header__navigation>li:not(:last-child) {
+&__navigation>li:not(:last-child) {
     margin-right: 50px;
 
 
 
 }
 
-.header__connect {
+&__connect {
     margin-left: auto;
     align-items: center;
 }
@@ -38,15 +38,19 @@ header {
 /*.navigation .logo{
     color: #000000;
 }*/
-.header__link:hover,
-.header__link:focus {
+ &__link{
+    color: var(--title-text-color);
+}
+
+&:hover,
+&:focus {
     color: var(--accent-color);
 
 }
 
 
-.header__link {
-    color: var(--title-text-color);
+&__link {
+    /*color: var(--title-text-color);*/
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
@@ -60,20 +64,20 @@ header {
 
 
 
-.header__current {
+&__current {
     color: var(--accent-color);
 }
 
-.header__contact:hover,
-.header__contact:focus {
+&:hover,
+&:focus {
     color: var(--accent-color);
 }
 
-.header__current {
+&__current {
     position: relative;
 }
 
-.header__current::after {
+&__current::after {
     position: absolute;
     content: '';
     width: 100%;
@@ -84,11 +88,12 @@ header {
     border-radius: 2px;
 }
 
-.header__contact:hover .header__icon {
-    fill: #2196F3;
-}
 
-.header__contact {
+/*.header__contact:hover .header__icon {
+    fill: #2196F3;
+}*/
+
+&__contact {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -99,7 +104,10 @@ header {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__icon {
+&__icon {
     margin-right: 10px;
     fill: #757575
+}
+&__contact:hover &{
+fill: #2196F3;
 }

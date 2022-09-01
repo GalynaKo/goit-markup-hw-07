@@ -12,7 +12,7 @@
 
 
 }
-.hero__title {
+&__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -25,7 +25,7 @@
     padding-top: 0;
     padding-bottom: 0;
 }
-.hero__btn {
+&__btn {
     background: var(--accent-color);
     font-weight: 700;
     line-height: calc(30/16);

@@ -1,7 +1,4 @@
-.logo__title {
-    color: var(--accent-color);
 
-}
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -11,7 +8,8 @@
     letter-spacing: 0.03em;
     margin-right: 93px;
     color: #000000;
-
-
+}
+&__title {
+    color: var(--accent-color);
 
 }

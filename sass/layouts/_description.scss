@@ -1,9 +1,12 @@
-.description__img {
+.description {
+    padding-top: 0;
+}
+&__img {
     position: relative;
 
 }
 
-.description__text {
+&__text {
     width: 370px;
     color: #ffffff;
     bottom: 0;
@@ -14,3 +17,4 @@
     background-color: #2F303ACC;
 
 }
+

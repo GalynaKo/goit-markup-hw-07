@@ -1,4 +1,4 @@
-.clients__list {
+&__list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
 
 }
 
-.clients__brand {
+&__brand {
     width: 170px;
     height: 92px;
     border-radius: 4px;
@@ -23,19 +23,20 @@
 
 }
 
-.clients__brand:hover,
-.clients__brand:focus {
+&:hover,
+&:focus {
     border: 1px solid #2196F3;
 }
 
-.clients__brand:hover .clients__icon {
-    fill: #2196F3;
-}
 
-.clients__icon {
+
+&__icon {
     fill: #AFB1B8;
 
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__brand:hover & {
+    fill: #2196F3;
 }

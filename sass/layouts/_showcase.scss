@@ -1,4 +1,4 @@
-.showcase__menu {
+&__menu {
     display: flex;
 
     gap: 8px;
@@ -6,7 +6,7 @@
 
 }
 
-.showcase__btn {
+&__btn {
     background: #F5F4FA;
     color: var(--title-text-color);
     font-weight: 500;
@@ -21,8 +21,8 @@
 
 }
 
-.showcase__btn:hover,
-.showcase__btn:focus {
+&:hover,
+&:focus {
     background: #2196F3;
     color: #ffffff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -30,7 +30,7 @@
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.showcase__list {
+&__list {
     display: flex;
     gap: 30px;
     margin-top: 50px;
@@ -38,12 +38,12 @@
 
 }
 
-.showcase__img {
+&__img {
     position: relative;
     overflow: hidden;
 }
 
-.showcase__instruction {
+&__instruction {
     transition-property: transform, opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -73,13 +73,7 @@
 
 
 }
-
-.showcase__product:hover .showcase__instruction {
-
-    transform: translateY(0%);
-    opacity: 1;
-}
-.instruction__:hover {
+&:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -87,14 +81,21 @@
 
 }
 
-.showcase__item {
+&__product:hover & {
+
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+
+&__item {
     padding: 20px 24px;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
 }
 
-.showcase__title {
+&__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -103,7 +104,7 @@
 
 }
 
-.showcase__text {
+&__text {
     font-size: 16px;
     line-height: 1.87;
     color: var(--primary-text-color);
